@@ -1,0 +1,16 @@
+# REGISTER 
+
+DO all Below steps in try,Catch,Async & Await
+1. GET BODY DATA
+2. Search if that data is present in database
+3. If data is present then handle the data 
+4. If data is not present then use bcryptjs
+5. create an instace of that data to save in database
+6.generate token and try to save the toke  in local storage send the tokes as response 
+
+# Login
+
+1.GET the data from body 
+2.Search if that data is present in database 
+2.if Data is present than handle that accordingly
+4.Create token & save that token in cookies or in local storage

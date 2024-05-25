@@ -1,0 +1,85 @@
+.auth-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container, .register-container {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 350px;
+    box-shadow: 10px 10px 10px #772ce8;
+}
+
+.register-container {
+    height: 500px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-form input {
+    margin: 5px 0;
+    padding: 5px;
+    width: 400px;
+}
+
+.auth-form button {
+    cursor: pointer;
+    background-color: #772ce8; /* Twitch Purple */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    width: 410px;
+    height: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.auth-form button:hover {
+    opacity: 0.8;
+}
+
+.auth-form button:disabled {
+    opacity: 0.3;
+}
+
+.auth-form-label {
+    width: 410px;
+    font-weight: 500;
+}
+
+.auth-form-logo-container {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.auth-form-switch-label {
+    color: #772ce8;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.auth-form-switch-label:hover {
+    opacity: 0.8;
+}
+
+.auth-form-validation-message {
+    width: 400px;
+    color: red;
+}

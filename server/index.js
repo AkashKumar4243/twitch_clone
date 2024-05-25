@@ -5,11 +5,12 @@ import http from "http"
 
 
 import authRoutes from "./src/routes/authRoutes.js"
+import connect from "./src/dbConfig/dbConfig.js"
 
 
 dotenv.config();
 
-console.log(process.env.PORT);
+// console.log(process.env.PORT);
 
 const PORT = 3000;
 
@@ -22,6 +23,8 @@ app.use(express.json());
 app.use('/api/auth',authRoutes);
 
 const server = http.createServer(app);
+
+connect();
 
 
 app.get('/', (req,res) => {
